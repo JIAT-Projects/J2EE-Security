@@ -20,7 +20,7 @@ public class CustomFormLogin extends HttpServlet {
         //DB auth check
         //Check type
 
-        req.login("user","1234");
+        req.login(username,password);
         resp.sendRedirect(req.getContextPath() + "/user");
 
 
